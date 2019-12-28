@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/characters/lookup",
+      "handler": "character.lookup",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/characters/:id",
       "handler": "character.findOne",
       "config": {

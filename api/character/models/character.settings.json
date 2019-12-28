@@ -25,7 +25,13 @@
     "CNName": {
       "type": "string"
     },
-    "Role": {
+    "JPRole": {
+      "type": "string"
+    },
+    "ENRole": {
+      "type": "string"
+    },
+    "CNRole": {
       "type": "string"
     },
     "JPLeaderBuff": {

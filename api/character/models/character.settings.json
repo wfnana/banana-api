@@ -1,0 +1,118 @@
+{
+  "info": {
+    "name": "Character"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "JPAttribute": {
+      "type": "string"
+    },
+    "ENAttribute": {
+      "type": "string"
+    },
+    "CNAttribute": {
+      "type": "string"
+    },
+    "JPName": {
+      "type": "string"
+    },
+    "ENName": {
+      "type": "string"
+    },
+    "CNName": {
+      "type": "string"
+    },
+    "Role": {
+      "type": "string"
+    },
+    "JPLeaderBuff": {
+      "type": "string"
+    },
+    "ENLeaderBuff": {
+      "type": "string"
+    },
+    "CNLeaderBuff": {
+      "type": "string"
+    },
+    "JPSkillName": {
+      "type": "string"
+    },
+    "ENSkillName": {
+      "type": "string"
+    },
+    "CNSkillName": {
+      "type": "string"
+    },
+    "JPSkillDesc": {
+      "type": "string"
+    },
+    "ENSkillDesc": {
+      "type": "string"
+    },
+    "CNSkillDesc": {
+      "type": "string"
+    },
+    "JPAbility1": {
+      "type": "string"
+    },
+    "JPAbility2": {
+      "type": "string"
+    },
+    "JPAbility3": {
+      "type": "string"
+    },
+    "ENAbility1": {
+      "type": "string"
+    },
+    "ENAbility2": {
+      "type": "string"
+    },
+    "ENAbility3": {
+      "type": "string"
+    },
+    "CNAbility1": {
+      "type": "string"
+    },
+    "CNAbility2": {
+      "type": "string"
+    },
+    "CNAbility3": {
+      "type": "string"
+    },
+    "Rarity": {
+      "type": "integer"
+    },
+    "SpriteURL": {
+      "type": "string"
+    },
+    "GifURL": {
+      "type": "string"
+    },
+    "Gender": {
+      "type": "string"
+    },
+    "Race1": {
+      "type": "string"
+    },
+    "Race2": {
+      "type": "string"
+    },
+    "SkillCost": {
+      "type": "string"
+    },
+    "SkillTypeIconUrl": {
+      "type": "string"
+    },
+    "Weapon": {
+      "type": "string"
+    },
+    "Nicknames": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "characters"
+}

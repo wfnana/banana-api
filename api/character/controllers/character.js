@@ -28,7 +28,7 @@ module.exports = {
             .orWhere("CNName", ctx.query.name)
             .orWhere("Nicknames", "LIKE", `%${ctx.query.name}%`);
         })
-        .fetch();
+        .fetchAll();
       if (!!lookup) entities = entities.concat(lookup);
     }
 

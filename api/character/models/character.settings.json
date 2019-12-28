@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "characters",
   "info": {
     "name": "Character"
   },
@@ -117,8 +119,9 @@
     },
     "Nicknames": {
       "type": "string"
+    },
+    "Limited": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "characters"
+  }
 }

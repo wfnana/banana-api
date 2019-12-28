@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "banana-api",
       script: "strapi",
-      args: "start",
+      args: "develop",
       autorestart: true,
       source_map_support: true,
       watch: ["api/**/*", "config/**/*", "extensions/**/*"]

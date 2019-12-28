@@ -29,7 +29,9 @@ module.exports = {
             .orWhere("Nicknames", "LIKE", `%${ctx.query.name}%`);
         })
         .fetchAll();
-      if (!!lookup) entities = entities.concat(lookup);
+      if (!!lookup) {
+        entities = entities.concat(lookup.models);
+      }
     }
 
     return entities.map(entity =>

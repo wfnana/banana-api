@@ -7,6 +7,26 @@ const { sanitizeEntity } = require("strapi-utils");
  */
 
 module.exports = {
+  attribute: async ctx => {
+    let entities = [];
+    if (ctx.query.name) {
+      const lookup = await strapi
+        .query("character")
+        .model.query(qb => {
+          qb.where("JPAttribute", ctx.query.name)
+            .orWhere("ENAttribute", ctx.query.name)
+            .orWhere("CNAttribute", ctx.query.name);
+        })
+        .fetchAll();
+      if (!!lookup) {
+        entities = entities.concat(lookup.models);
+      }
+    }
+
+    return entities.map(entity =>
+      sanitizeEntity(entity, { model: strapi.models.character })
+    );
+  },
   lookup: async ctx => {
     let entities = [];
     if (ctx.query.name) {

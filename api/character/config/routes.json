@@ -26,6 +26,14 @@
     },
     {
       "method": "GET",
+      "path": "/characters/attribute",
+      "handler": "character.attribute",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/characters/:id",
       "handler": "character.findOne",
       "config": {

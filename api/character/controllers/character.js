@@ -45,7 +45,7 @@ module.exports = {
         .model.query(qb => {
           qb.where("JPName", ctx.query.name)
             .orWhere("ENName", ctx.query.name)
-            .orWhere("CNName", ctx.query.name)
+            .orWhere("CNName", "LIKE", `%${ctx.query.name}%`)
             .orWhere("Nicknames", "LIKE", `%${ctx.query.name}%`);
         })
         .fetchAll();

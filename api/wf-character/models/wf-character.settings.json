@@ -9,7 +9,13 @@
     "timestamps": true
   },
   "attributes": {
-    "Attribute": {
+    "JPAttribute": {
+      "type": "string"
+    },
+    "ENAttribute": {
+      "type": "string"
+    },
+    "CNAttribute": {
       "type": "string"
     },
     "JPName": {

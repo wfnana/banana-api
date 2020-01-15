@@ -720,7 +720,13 @@
           "id": {
             "type": "string"
           },
-          "Attribute": {
+          "JPAttribute": {
+            "type": "string"
+          },
+          "ENAttribute": {
+            "type": "string"
+          },
+          "CNAttribute": {
             "type": "string"
           },
           "JPName": {
@@ -827,7 +833,13 @@
       },
       "NewWf-character": {
         "properties": {
-          "Attribute": {
+          "JPAttribute": {
+            "type": "string"
+          },
+          "ENAttribute": {
+            "type": "string"
+          },
+          "CNAttribute": {
             "type": "string"
           },
           "JPName": {

@@ -34,7 +34,6 @@ module.exports = {
           ]
         })
         .exec();
-      console.log(lookup);
       if (!!lookup) {
         entities = entities.concat(lookup);
       }

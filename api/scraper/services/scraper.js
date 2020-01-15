@@ -150,6 +150,10 @@ function line10parser(s, c) {
   c.CNAbility3 = columns[A3Indicator + 1].innerHTML;
 }
 
+const JPAttributeList = ["火", "水", "雷", "風", "闇", "光"];
+const CNAttributeList = ["火", "水", "雷", "風", "暗", "光"];
+const ENAttributeList = ["FIRE", "WATER", "THUNDER", "WIND", "DARK", "LIGHT"];
+
 module.exports = {
   fetch: async function() {
     // Start Browser
@@ -172,66 +176,81 @@ module.exports = {
     const RarityMapper = {};
     const WeaponMapper = {};
 
-    const lines = Array.from(
-      document.querySelectorAll(".grid-container tbody tr")
+    const tables = Array.from(
+      document.querySelectorAll("#sheets-viewport > div")
     );
 
-    const data = lines.reduce(function(arr, dom, index) {
-      const s = serializeTableLine(dom);
-      if (shouldStart(s) && isCharacter(s)) {
-        const character = {};
-        line1parser(serializeTableLine(lines[index]), character);
-        line2parser(serializeTableLine(lines[index + 1]), character);
-        line3parser(serializeTableLine(lines[index + 2]), character);
-        line4parser(serializeTableLine(lines[index + 3]), character);
-        line5parser(serializeTableLine(lines[index + 4]), character);
-        line6parser(serializeTableLine(lines[index + 5]), character);
-        line7parser(serializeTableLine(lines[index + 6]), character);
-        line8parser(serializeTableLine(lines[index + 7]), character);
-        line9parser(serializeTableLine(lines[index + 8]), character);
-        line10parser(serializeTableLine(lines[index + 9]), character);
+    let data = [];
 
-        // Images
+    tables.map(function(table, tableIndex) {
+      // Index start with 0
+      if (tableIndex > 5) return;
 
-        let middlepath = "/";
-        if (character.CNGet.includes("新年")) middlepath = "/new-year-eve/";
-        if (character.CNGet.includes("聖誕")) middlepath = "/christmas/";
-        character.GifURL = encodeURIComponent(
-          `/assets/wf-characters${middlepath}${character.JPName}.gif`
-        );
-        character.SpriteURL = encodeURIComponent(
-          `/assets/wf-characters${middlepath}${character.JPName}.png`
-        );
+      const lines = Array.from(
+        table.querySelectorAll(".grid-container tbody tr")
+      );
 
-        if (character.JPName === "ヴァーグナー") {
-          RarityMapper[character.Star] = 5;
-          WeaponMapper[character.Weapon] = "射撃";
+      data = lines.reduce(function(arr, dom, index) {
+        const s = serializeTableLine(dom);
+        if (shouldStart(s) && isCharacter(s)) {
+          const character = {
+            JPAttribute: JPAttributeList[tableIndex],
+            CNAttribute: CNAttributeList[tableIndex],
+            ENAttribute: ENAttributeList[tableIndex]
+          };
+          line1parser(serializeTableLine(lines[index]), character);
+          line2parser(serializeTableLine(lines[index + 1]), character);
+          line3parser(serializeTableLine(lines[index + 2]), character);
+          line4parser(serializeTableLine(lines[index + 3]), character);
+          line5parser(serializeTableLine(lines[index + 4]), character);
+          line6parser(serializeTableLine(lines[index + 5]), character);
+          line7parser(serializeTableLine(lines[index + 6]), character);
+          line8parser(serializeTableLine(lines[index + 7]), character);
+          line9parser(serializeTableLine(lines[index + 8]), character);
+          line10parser(serializeTableLine(lines[index + 9]), character);
+
+          // Images
+
+          let middlepath = "/";
+          if (character.CNGet.includes("新年")) middlepath = "/new-year-eve/";
+          if (character.CNGet.includes("聖誕")) middlepath = "/christmas/";
+          character.GifURL = encodeURIComponent(
+            `/assets/wf-characters${middlepath}${character.JPName}.gif`
+          );
+          character.SpriteURL = encodeURIComponent(
+            `/assets/wf-characters${middlepath}${character.JPName}.png`
+          );
+
+          if (character.JPName === "ヴァーグナー") {
+            RarityMapper[character.Star] = 5;
+            WeaponMapper[character.Weapon] = "射撃";
+          }
+
+          if (character.JPName === "アルク") {
+            RarityMapper[character.Star] = 4;
+            WeaponMapper[character.Weapon] = "剣士";
+          }
+
+          if (character.JPName === "リリル") {
+            RarityMapper[character.Star] = 3;
+            WeaponMapper[character.Weapon] = "特殊";
+          }
+
+          if (character.JPName === "ゴーレム") {
+            RarityMapper[character.Star] = 2;
+            WeaponMapper[character.Weapon] = "格闘";
+          }
+
+          if (character.JPName === "ファイアスピリ") {
+            RarityMapper[character.Star] = 1;
+            WeaponMapper[character.Weapon] = "補助";
+          }
+
+          arr.push(character);
         }
-
-        if (character.JPName === "アルク") {
-          RarityMapper[character.Star] = 4;
-          WeaponMapper[character.Weapon] = "剣士";
-        }
-
-        if (character.JPName === "リリル") {
-          RarityMapper[character.Star] = 3;
-          WeaponMapper[character.Weapon] = "特殊";
-        }
-
-        if (character.JPName === "ゴーレム") {
-          RarityMapper[character.Star] = 2;
-          WeaponMapper[character.Weapon] = "格闘";
-        }
-
-        if (character.JPName === "ファイアスピリ") {
-          RarityMapper[character.Star] = 1;
-          WeaponMapper[character.Weapon] = "補助";
-        }
-
-        arr.push(character);
-      }
-      return arr;
-    }, []);
+        return arr;
+      }, data);
+    });
 
     return data.map(function(character) {
       // remove any html tag if found

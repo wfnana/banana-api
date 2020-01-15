@@ -10,25 +10,28 @@ module.exports = {
   lookup: async ctx => {
     let entities = [];
     if (ctx.query.name) {
+      const query = await strapi.services["word-alias"].normalize(
+        ctx.query.name
+      );
       const lookup = await strapi
         .query("wf-character")
         .model.find({
           $or: [
             {
               JPName: {
-                $regex: ctx.query.name,
+                $regex: query,
                 $options: "i"
               }
             },
             {
               CNName: {
-                $regex: ctx.query.name,
+                $regex: query,
                 $options: "i"
               }
             },
             {
               Nicknames: {
-                $in: [ctx.query.name]
+                $in: [query]
               }
             }
           ]
@@ -45,25 +48,28 @@ module.exports = {
   attribute: async ctx => {
     let entities = [];
     if (ctx.query.name) {
+      const query = await strapi.services["word-alias"].normalize(
+        ctx.query.name
+      );
       const lookup = await strapi
         .query("wf-character")
         .model.find({
           $or: [
             {
               JPAttribute: {
-                $regex: ctx.query.name,
+                $regex: query,
                 $options: "i"
               }
             },
             {
               CNAttribute: {
-                $regex: ctx.query.name,
+                $regex: query,
                 $options: "i"
               }
             },
             {
               ENAttribute: {
-                $regex: ctx.query.name,
+                $regex: query,
                 $options: "i"
               }
             }

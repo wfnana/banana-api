@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "WordAlias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "base": {
+      "type": "string"
+    },
+    "Alias": {
+      "type": "json"
+    }
+  },
+  "connection": "default",
+  "collectionName": "word_aliases"
+}

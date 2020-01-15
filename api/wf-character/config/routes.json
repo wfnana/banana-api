@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wf-characters",
+      "handler": "wf-character.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wf-characters/count",
+      "handler": "wf-character.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-characters/lookup",
+      "handler": "wf-character.lookup",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wf-characters/scrape",
+      "handler": "wf-character.scrape",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wf-characters/initial",
+      "handler": "wf-character.initial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wf-characters/:id",
+      "handler": "wf-character.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-characters",
+      "handler": "wf-character.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wf-characters/:id",
+      "handler": "wf-character.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wf-characters/:id",
+      "handler": "wf-character.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "connection": "default",
+  "collectionName": "wf_characters",
+  "info": {
+    "name": "WFCharacter"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Attribute": {
+      "type": "string"
+    },
+    "JPName": {
+      "type": "string"
+    },
+    "ENName": {
+      "type": "string"
+    },
+    "CNName": {
+      "type": "string"
+    },
+    "JPLeaderBuff": {
+      "type": "string"
+    },
+    "ENLeaderBuff": {
+      "type": "string"
+    },
+    "CNLeaderBuff": {
+      "type": "string"
+    },
+    "JPSkillName": {
+      "type": "string"
+    },
+    "ENSkillName": {
+      "type": "string"
+    },
+    "CNSkillName": {
+      "type": "string"
+    },
+    "JPSkillDesc": {
+      "type": "string"
+    },
+    "ENSkillDesc": {
+      "type": "string"
+    },
+    "CNSkillDesc": {
+      "type": "string"
+    },
+    "JPAbility1": {
+      "type": "string"
+    },
+    "JPAbility2": {
+      "type": "string"
+    },
+    "JPAbility3": {
+      "type": "string"
+    },
+    "ENAbility1": {
+      "type": "string"
+    },
+    "ENAbility2": {
+      "type": "string"
+    },
+    "ENAbility3": {
+      "type": "string"
+    },
+    "CNAbility1": {
+      "type": "string"
+    },
+    "CNAbility2": {
+      "type": "string"
+    },
+    "CNAbility3": {
+      "type": "string"
+    },
+    "Rarity": {
+      "type": "integer",
+      "default": 1,
+      "max": 5,
+      "min": 1
+    },
+    "SpriteURL": {
+      "type": "string"
+    },
+    "GifURL": {
+      "type": "string"
+    },
+    "CNGet": {
+      "type": "string"
+    },
+    "Gender": {
+      "type": "string"
+    },
+    "Race1": {
+      "type": "string"
+    },
+    "Race2": {
+      "type": "string"
+    },
+    "SkillCost": {
+      "type": "integer"
+    },
+    "JPWeapon": {
+      "type": "string"
+    },
+    "CNWeapon": {
+      "type": "string"
+    },
+    "Nicknames": {
+      "type": "json"
+    },
+    "JPNickname": {
+      "type": "string"
+    }
+  }
+}

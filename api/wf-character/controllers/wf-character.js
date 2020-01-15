@@ -42,6 +42,42 @@ module.exports = {
       sanitizeEntity(entity, { model: strapi.models["wf-character"] })
     );
   },
+  attribute: async ctx => {
+    let entities = [];
+    if (ctx.query.name) {
+      const lookup = await strapi
+        .query("wf-character")
+        .model.find({
+          $or: [
+            {
+              JPAttribute: {
+                $regex: ctx.query.name,
+                $options: "i"
+              }
+            },
+            {
+              CNAttribute: {
+                $regex: ctx.query.name,
+                $options: "i"
+              }
+            },
+            {
+              ENAttribute: {
+                $regex: ctx.query.name,
+                $options: "i"
+              }
+            }
+          ]
+        })
+        .exec();
+      if (!!lookup) {
+        entities = entities.concat(lookup);
+      }
+    }
+    return entities.map(entity =>
+      sanitizeEntity(entity, { model: strapi.models["wf-character"] })
+    );
+  },
   scrape: async ctx => {
     const entities = await strapi.services.scraper.fetch();
     return entities.map(entity =>

@@ -25,7 +25,15 @@
       }
     },
     {
-      "method": "GET",
+      "method": "POST",
+      "path": "/wf-characters/attribute",
+      "handler": "wf-character.attribute",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
       "path": "/wf-characters/scrape",
       "handler": "wf-character.scrape",
       "config": {
@@ -33,7 +41,7 @@
       }
     },
     {
-      "method": "GET",
+      "method": "POST",
       "path": "/wf-characters/initial",
       "handler": "wf-character.initial",
       "config": {

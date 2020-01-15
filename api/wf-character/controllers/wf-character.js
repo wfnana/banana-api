@@ -13,6 +13,7 @@ module.exports = {
       const query = await strapi.services["word-alias"].normalize(
         ctx.query.name
       );
+      const regex = new RegExp(query, "i");
       const lookup = await strapi
         .query("wf-character")
         .model.find({
@@ -31,12 +32,13 @@ module.exports = {
             },
             {
               Nicknames: {
-                $in: [query]
+                $in: [regex]
               }
             }
           ]
         })
         .exec();
+      console.log(query, lookup);
       if (!!lookup) {
         entities = entities.concat(lookup);
       }
@@ -48,9 +50,11 @@ module.exports = {
   attribute: async ctx => {
     let entities = [];
     if (ctx.query.name) {
-      const query = await strapi.services["word-alias"].normalize(
-        ctx.query.name
-      );
+      // const query = await strapi.services["word-alias"].normalize(
+      //   ctx.query.name
+      // );
+      // Should Not Normalize
+      const query = ctx.query.name;
       const lookup = await strapi
         .query("wf-character")
         .model.find({
@@ -76,6 +80,7 @@ module.exports = {
           ]
         })
         .exec();
+      console.log(query, lookup);
       if (!!lookup) {
         entities = entities.concat(lookup);
       }

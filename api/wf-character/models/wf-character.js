@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Lifecycle callbacks for the `wf-character` model.
@@ -40,6 +40,14 @@ module.exports = {
   // Before updating a value.
   // Fired before an `update` query.
   // beforeUpdate: async (model, attrs, options) => {},
+  beforeUpdate: async (model, attrs, options) => {
+    const update = model.getUpdate();
+    if (!!update && !!update.Nicknames && !Array.isArray(update.Nicknames)) {
+      update.Nicknames = update.Nicknames.split(" ");
+      console.log(update);
+      model.setUpdate(update);
+    }
+  }
 
   // After updating a value.
   // Fired after an `update` query.

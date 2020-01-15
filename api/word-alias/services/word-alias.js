@@ -7,20 +7,23 @@
 
 module.exports = {
   normalize: async string => {
-    const words = Array.from(string.split(""));
-    return await Promise.all(
-      words.reduce(async function(word) {
-        const found = await strapi
-          .query("word-alias")
-          .model.find({
-            alias: {
-              $in: [word]
-            }
-          })
-          .exec();
-        if (!!found) return found.base;
-        return word;
-      }, "")
-    );
+    const words = String(string).split("");
+
+    let result = "";
+
+    for (const word of words) {
+      const found = await strapi
+        .query("word-alias")
+        .model.find({
+          Alias: {
+            $in: [word]
+          }
+        })
+        .exec();
+      if (found.length !== 0) result += found[0].base;
+      else result += word;
+    }
+
+    return result;
   }
 };

@@ -6,7 +6,7 @@ module.exports = {
       args: "develop",
       autorestart: true,
       source_map_support: true,
-      watch: ["api/**/*", "config/**/*", "extensions/**/*"]
+      watch: ["api/**/*", "config/**/*", "extensions/**/*", ".env"]
     }
   ]
 };

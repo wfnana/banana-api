@@ -193,7 +193,7 @@ module.exports = {
 
         // Images
 
-        let middlepath = "";
+        let middlepath = "/";
         if (character.CNGet.includes("新年")) middlepath = "/new-year-eve/";
         if (character.CNGet.includes("聖誕")) middlepath = "/christmas/";
         character.GifURL = encodeURIComponent(

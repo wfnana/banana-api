@@ -1,6 +1,7 @@
 [
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "プロメテウスの剣",
     "CNName": "普羅米修斯之劍",
@@ -18,6 +19,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "オケアノスの槍",
     "CNName": "歐開諾斯之槍",
@@ -52,6 +54,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "アイオロスの弓",
     "CNName": "埃俄羅斯之弓",
@@ -69,6 +72,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "ヘイムダルの剣",
     "CNName": "海姆達爾之劍",
@@ -85,7 +89,8 @@
     "Nicknames": ["光崩壞武"]
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "オルクスの拳",
     "CNName": "奧迦斯之拳",
@@ -103,6 +108,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "聖鈴の円盾",
     "CNName": "聖鈴圓盾",
@@ -154,6 +160,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "木霊の大剣",
     "CNName": "木靈大劍",
@@ -171,6 +178,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "禍根の剣",
     "CNName": "禍根之劍",
@@ -188,6 +196,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "冥王の錫杖",
     "CNName": "冥王錫杖",
@@ -205,6 +214,7 @@
   },
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "石兵要術",
     "CNName": "石兵要術",
@@ -222,6 +232,7 @@
   },
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "太古の盾",
     "CNName": "太古盾",
@@ -239,6 +250,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "貝帝の剣",
     "CNName": "貝帝劍",
@@ -256,6 +268,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "潮老の杖",
     "CNName": "潮老杖",
@@ -272,7 +285,8 @@
     "Nicknames": ["海產武"]
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "カースアックス",
     "CNName": "詛咒之斧",
@@ -289,7 +303,8 @@
     "Nicknames": []
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "愚者の弓",
     "CNName": "愚者之弓",
@@ -341,6 +356,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "デストロイヤー",
     "CNName": "破壞者",
@@ -358,6 +374,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "スクリプチャー",
     "CNName": "機械聖律",
@@ -374,7 +391,8 @@
     "Nicknames": ["機械武"]
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "妖刀蛇崩",
     "CNName": "妖刀蛇崩",
@@ -391,7 +409,8 @@
     "Nicknames": []
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "天羽々斬",
     "CNName": "天羽羽斬",
@@ -630,6 +649,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "ウコンバサラ",
     "CNName": "",
@@ -647,6 +667,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "デスシックル",
     "CNName": "",
@@ -681,6 +702,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "メテオラ",
     "CNName": "",
@@ -698,6 +720,7 @@
   },
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "占事略決",
     "CNName": "占事略決",
@@ -714,7 +737,8 @@
     "Nicknames": []
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "天磐盾",
     "CNName": "天磐盾",
@@ -732,6 +756,7 @@
   },
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "ジャベリン",
     "CNName": "標槍",
@@ -749,6 +774,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "ダイヤシールド",
     "CNName": "鑽石盾",
@@ -783,6 +809,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "ツイストランス",
     "CNName": "螺旋槍",
@@ -800,6 +827,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "ホーリーロッド",
     "CNName": "神聖權杖",
@@ -817,6 +845,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "戦国策写本",
     "CNName": "戰國策略本",
@@ -834,6 +863,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "パルチザン",
     "CNName": "闊頭槍",
@@ -850,7 +880,8 @@
     "Nicknames": []
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "ニーベルンゲン",
     "CNName": "尼伯龍根",
@@ -868,6 +899,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "コンパウンドボウ",
     "CNName": "複合弓",
@@ -885,6 +917,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "梓弓",
     "CNName": "梓弓",
@@ -902,6 +935,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "パワードアーム",
     "CNName": "強化手臂",
@@ -919,6 +953,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "トマホーク",
     "CNName": "印地安戰斧",
@@ -936,6 +971,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "珊瑚の槍",
     "CNName": "珊瑚之槍",
@@ -953,6 +989,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "イルウーン",
     "CNName": "",
@@ -969,7 +1006,8 @@
     "Nicknames": []
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "レヒニッツ写本",
     "CNName": "羅洪特抄本",
@@ -987,6 +1025,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "司祭の杖",
     "CNName": "司祭之杖",
@@ -1004,6 +1043,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "ロングボウ",
     "CNName": "長弓",
@@ -1021,6 +1061,7 @@
   },
   {
     "JPAttribute": "水",
+    "CNAttribute": "水",
     "ENAttribute": "Water",
     "JPName": "カトラス",
     "CNName": "彎刀",
@@ -1038,6 +1079,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "嘘の本",
     "CNName": "謊言之書",
@@ -1072,6 +1114,7 @@
   },
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "パイク",
     "CNName": "長柄槍",
@@ -1089,6 +1132,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "グラスブレード",
     "CNName": "玻璃劍",
@@ -1106,6 +1150,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "クロスボウ",
     "CNName": "十字弓",
@@ -1123,6 +1168,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "マジックケーン",
     "CNName": "魔法杖",
@@ -1140,6 +1186,7 @@
   },
   {
     "JPAttribute": "火",
+    "CNAttribute": "火",
     "ENAttribute": "Fire",
     "JPName": "ムーンパタ",
     "CNName": "",
@@ -1157,6 +1204,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "クーゼ",
     "CNName": "長柄刀",
@@ -1174,6 +1222,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "ラピスバックラー",
     "CNName": "Lapis Buckler",
@@ -1189,7 +1238,8 @@
     "Nicknames": []
   },
   {
-    "JPAttribute": "暗",
+    "JPAttribute": "闇",
+    "CNAttribute": "暗",
     "ENAttribute": "Dark",
     "JPName": "バイキングアクス",
     "CNName": "維京斧",
@@ -1207,6 +1257,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "偃月刀",
     "CNName": "偃月刀",
@@ -1241,6 +1292,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "ドラググラブ",
     "CNName": "",
@@ -1258,6 +1310,7 @@
   },
   {
     "JPAttribute": "風",
+    "CNAttribute": "風",
     "ENAttribute": "Wind",
     "JPName": "ナイトシールド",
     "CNName": "騎士盾",
@@ -1275,6 +1328,7 @@
   },
   {
     "JPAttribute": "光",
+    "CNAttribute": "光",
     "ENAttribute": "Light",
     "JPName": "フランベルジュ",
     "CNName": "波形劍",
@@ -1292,6 +1346,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "牛斧",
     "CNName": "牛斧",
@@ -1309,6 +1364,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "無銘の長剣",
     "CNName": "未命名的長劍",
@@ -1326,6 +1382,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "無銘の槍",
     "CNName": "未命名的槍",
@@ -1343,6 +1400,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "無銘の弓",
     "CNName": "未命名的弓",
@@ -1360,6 +1418,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "無銘の古書",
     "CNName": "未命名的古書",
@@ -1377,6 +1436,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "無銘の拳具",
     "CNName": "未命名的拳具",
@@ -1394,6 +1454,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "無銘の斧",
     "CNName": "未命名的斧",
@@ -1411,6 +1472,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "古びた短剣",
     "CNName": "陳舊短劍",
@@ -1428,6 +1490,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "古びた杖",
     "CNName": "陳舊法杖",
@@ -1445,6 +1508,7 @@
   },
   {
     "JPAttribute": "全",
+    "CNAttribute": "全",
     "ENAttribute": "All",
     "JPName": "古びた盾",
     "CNName": "陳舊盾牌",

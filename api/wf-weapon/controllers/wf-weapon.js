@@ -1,0 +1,134 @@
+"use strict";
+const { sanitizeEntity } = require("strapi-utils");
+
+/**
+ * Read the documentation (https://strapi.io/documentation/3.0.0-beta.x/concepts/controllers.html#core-controllers)
+ * to customize this controller
+ */
+
+module.exports = {
+  lookup: async ctx => {
+    let entities = [];
+    if (ctx.query.name) {
+      const query = await strapi.services["word-alias"].normalize(
+        ctx.query.name
+      );
+      const regex = new RegExp(query, "i");
+      const lookup = await strapi
+        .query("wf-weapon")
+        .model.find({
+          $or: [
+            {
+              JPName: {
+                $regex: query,
+                $options: "i"
+              }
+            },
+            {
+              CNName: {
+                $regex: query,
+                $options: "i"
+              }
+            },
+            {
+              ENName: {
+                $regex: query,
+                $options: "i"
+              }
+            },
+            {
+              Nicknames: {
+                $in: [regex]
+              }
+            }
+          ]
+        })
+        .exec();
+      console.log(query, lookup);
+      if (!!lookup) {
+        entities = entities.concat(lookup);
+      }
+    }
+    return entities.map(entity =>
+      sanitizeEntity(entity, { model: strapi.models["wf-weapon"] })
+    );
+  },
+  attribute: async ctx => {
+    let entities = [];
+    if (ctx.query.name) {
+      // const query = await strapi.services["word-alias"].normalize(
+      //   ctx.query.name
+      // );
+      // Should Not Normalize
+      const query = ctx.query.name;
+      const lookup = await strapi
+        .query("wf-weapon")
+        .model.find({
+          $or: [
+            {
+              JPAttribute: {
+                $regex: query,
+                $options: "i"
+              }
+            },
+            {
+              CNAttribute: {
+                $regex: query,
+                $options: "i"
+              }
+            },
+            {
+              ENAttribute: {
+                $regex: query,
+                $options: "i"
+              }
+            }
+          ]
+        })
+        .exec();
+      console.log(query, lookup);
+      if (!!lookup) {
+        entities = entities.concat(lookup);
+      }
+    }
+    return entities.map(entity =>
+      sanitizeEntity(entity, { model: strapi.models["wf-weapon"] })
+    );
+  },
+  initial: async ctx => {
+    const entities = await require("../../../public/assets/Weapon.json");
+
+    for (let i = entities.length - 1; i >= 0; i--) {
+      try {
+        const weapon = entities[i];
+        const Name = String(weapon.ENName)
+          .toLowerCase()
+          .replace(/\s/g, "_");
+        weapon.ImgUrl = encodeURIComponent(`/assets/wf-weapons/${Name}.png`);
+        weapon.ENAttribute = String(weapon.ENAttribute).toUpperCase();
+
+        const query = {
+          JPName: weapon.JPName,
+          CNName: weapon.CNName,
+          Rarity: weapon.Rarity,
+          CNGet: weapon.CNGet
+        };
+        // find if wf weapon is exist
+        const WFWeapon = await strapi.query("wf-weapon").model.findOne(query);
+        if (WFWeapon) {
+          strapi.query("wf-weapon").update(query, weapon);
+        } else {
+          // try to create wf weapon
+          strapi.query("wf-weapon").create(weapon);
+        }
+      } catch (err) {
+        // do something if error occur
+        console.debug(err);
+      }
+    }
+
+    return entities.map(entity =>
+      sanitizeEntity(entity, { model: strapi.models["wf-weapon"] })
+    );
+  }
+};

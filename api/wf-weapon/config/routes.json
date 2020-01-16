@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wf-weapons",
+      "handler": "wf-weapon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wf-weapons/count",
+      "handler": "wf-weapon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-weapons/lookup",
+      "handler": "wf-weapon.lookup",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-weapons/attribute",
+      "handler": "wf-weapon.attribute",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-weapons/initial",
+      "handler": "wf-weapon.initial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wf-weapons/:id",
+      "handler": "wf-weapon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-weapons",
+      "handler": "wf-weapon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wf-weapons/:id",
+      "handler": "wf-weapon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wf-weapons/:id",
+      "handler": "wf-weapon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

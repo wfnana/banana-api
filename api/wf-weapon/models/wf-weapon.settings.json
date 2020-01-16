@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "WFWeapon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "JPAttribute": {
+      "type": "string"
+    },
+    "ENAttribute": {
+      "type": "string"
+    },
+    "CNAttribute": {
+      "type": "string"
+    },
+    "JPName": {
+      "type": "string"
+    },
+    "ENName": {
+      "type": "string"
+    },
+    "CNName": {
+      "type": "string"
+    },
+    "Hp": {
+      "type": "string"
+    },
+    "Atk": {
+      "type": "string"
+    },
+    "CNSkill": {
+      "type": "string"
+    },
+    "MaxHp": {
+      "type": "string"
+    },
+    "MaxAtk": {
+      "type": "string"
+    },
+    "CNMaxSkill": {
+      "type": "string"
+    },
+    "ImgUrl": {
+      "type": "string"
+    },
+    "Rarity": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "CNGet": {
+      "type": "string"
+    },
+    "Nicknames": {
+      "type": "json"
+    }
+  },
+  "connection": "default",
+  "collectionName": "wf_weapons"
+}

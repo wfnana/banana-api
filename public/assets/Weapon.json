@@ -37,6 +37,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "トールの鎚",
     "CNName": "索爾之鎚",
@@ -126,6 +127,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "黑竜雷槍",
     "CNName": "黑龍雷槍",
@@ -143,6 +145,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "黑竜雷剣",
     "CNName": "黑龍雷劍",
@@ -322,6 +325,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "玄虎の弓",
     "CNName": "玄虎弓",
@@ -339,6 +343,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "虎王斧",
     "CNName": "虎王斧",
@@ -685,6 +690,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "アストロレーベ",
     "CNName": "",
@@ -792,6 +798,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "赤鬼の篭手",
     "CNName": "",
@@ -1097,6 +1104,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "ウォーサイズ",
     "CNName": "戰鐮",
@@ -1275,6 +1283,7 @@
   },
   {
     "JPAttribute": "雷",
+    "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "ピレボス",
     "CNName": "",

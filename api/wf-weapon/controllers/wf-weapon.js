@@ -103,6 +103,7 @@ module.exports = {
         const weapon = entities[i];
         const Name = String(weapon.ENName)
           .toLowerCase()
+          .replace(/\'/g, "")
           .replace(/\s/g, "_");
         weapon.ImgUrl = encodeURIComponent(`/assets/wf-weapons/${Name}.jpg`);
         weapon.ENAttribute = String(weapon.ENAttribute).toUpperCase();

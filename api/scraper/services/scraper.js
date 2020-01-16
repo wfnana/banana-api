@@ -256,6 +256,10 @@ module.exports = {
       // remove any html tag if found
       character.CNName = character.CNName.replace(/<.*?>/g, "");
       character.CNGet = character.CNGet.replace(/<.*?>/g, "");
+      character.CNAbility1 = character.CNAbility1.replace(/<.*?>/g, "");
+      character.CNAbility2 = character.CNAbility2.replace(/<.*?>/g, "");
+      character.CNAbility3 = character.CNAbility3.replace(/<.*?>/g, "");
+
       character.Rarity = RarityMapper[character.Star];
       character.JPWeapon = WeaponMapper[character.Weapon];
       character.CNWeapon = WeaponMapper[character.Weapon];

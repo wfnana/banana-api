@@ -37,7 +37,6 @@ module.exports = {
           ]
         })
         .exec();
-      console.log(query, lookup);
       if (!!lookup) {
         entities = entities.concat(lookup);
       }
@@ -76,7 +75,89 @@ module.exports = {
           ]
         })
         .exec();
-      console.log(query, lookup);
+      if (!!lookup) {
+        entities = entities.concat(lookup);
+      }
+    }
+    return entities.map(entity =>
+      sanitizeEntity(entity, { model: strapi.models["wf-character"] })
+    );
+  },
+  abilities: async ctx => {
+    let entities = [];
+    if (ctx.query.name) {
+      const oldRegex = new RegExp(ctx.query.name, "i");
+      const query = await strapi.services["word-alias"].normalize(
+        ctx.query.name
+      );
+      const regex = new RegExp(query, "i");
+      const lookup = await strapi
+        .query("wf-character")
+        .model.find({
+          $or: [
+            {
+              JPSkillDesc: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              ENSkillDesc: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              CNSkillDesc: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              JPAbility1: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              CNAbility1: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              ENAbility1: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              JPAbility2: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              CNAbility2: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              ENAbility2: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              JPAbility3: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              CNAbility3: {
+                $in: [oldRegex, regex]
+              }
+            },
+            {
+              ENAbility3: {
+                $in: [oldRegex, regex]
+              }
+            }
+          ]
+        })
+        .exec();
       if (!!lookup) {
         entities = entities.concat(lookup);
       }

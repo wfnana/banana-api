@@ -9,7 +9,7 @@ const { sanitizeEntity } = require("strapi-utils");
 module.exports = {
   lookup: async ctx => {
     let entities = [];
-    const filter = {
+    let filter = {
       $and: []
     };
     if (ctx.query.name) {
@@ -136,6 +136,7 @@ module.exports = {
         ]
       });
     }
+    if (filter.$and.length === 0) filter = {};
     const lookup = await strapi
       .query("wf-character")
       .model.find(filter)

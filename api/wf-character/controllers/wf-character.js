@@ -53,7 +53,7 @@ module.exports = {
       const query = await strapi.services["word-alias"].normalize(
         ctx.query.name
       );
-      const query = ctx.query.name;
+      const regex = new RegExp(query, "i");
       const lookup = await strapi
         .query("wf-character")
         .model.find({

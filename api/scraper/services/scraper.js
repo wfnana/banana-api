@@ -256,6 +256,14 @@ module.exports = {
       // remove any html tag if found
       character.CNName = character.CNName.replace(/<.*?>/g, "");
       character.CNGet = character.CNGet.replace(/<.*?>/g, "");
+      character.CNLeaderBuff = character.CNLeaderBuff.replace(
+        /<.*?>/g,
+        ""
+      ).replace(/&amp;/g, "&");
+      character.CNSkillDesc = character.CNSkillDesc.replace(
+        /<.*?>/g,
+        ""
+      ).replace(/&amp;/g, "&");
       character.CNAbility1 = character.CNAbility1.replace(/<.*?>/g, "").replace(
         /&amp;/g,
         "&"

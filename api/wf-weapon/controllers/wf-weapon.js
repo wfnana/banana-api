@@ -10,6 +10,7 @@ module.exports = {
   lookup: async ctx => {
     let entities = [];
     if (ctx.query.name) {
+      const oldRegex = new RegExp(ctx.query.name, "i");
       const query = await strapi.services["word-alias"].normalize(
         ctx.query.name
       );
@@ -20,22 +21,22 @@ module.exports = {
           $or: [
             {
               JPName: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             },
             {
               CNName: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             },
             {
               ENName: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             },
             {
               Nicknames: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             }
           ]
@@ -53,10 +54,10 @@ module.exports = {
   attribute: async ctx => {
     let entities = [];
     if (ctx.query.name) {
-      // const query = await strapi.services["word-alias"].normalize(
-      //   ctx.query.name
-      // );
-      // Should Not Normalize
+      const oldRegex = new RegExp(ctx.query.name, "i");
+      const query = await strapi.services["word-alias"].normalize(
+        ctx.query.name
+      );
       const query = ctx.query.name;
       const lookup = await strapi
         .query("wf-weapon")
@@ -64,17 +65,17 @@ module.exports = {
           $or: [
             {
               JPAttribute: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             },
             {
               CNAttribute: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             },
             {
               ENAttribute: {
-                $in: [ctx.query.name, regex]
+                $in: [oldRegex, regex]
               }
             }
           ]

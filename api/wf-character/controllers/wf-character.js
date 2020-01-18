@@ -9,159 +9,138 @@ const { sanitizeEntity } = require("strapi-utils");
 module.exports = {
   lookup: async ctx => {
     let entities = [];
+    const filter = {
+      $and: []
+    };
     if (ctx.query.name) {
-      const oldRegex = new RegExp(ctx.query.name, "i");
+      const oRegex = new RegExp(ctx.query.name, "i");
       const query = await strapi.services["word-alias"].normalize(
         ctx.query.name
       );
       const regex = new RegExp(query, "i");
-      const lookup = await strapi
-        .query("wf-character")
-        .model.find({
-          $or: [
-            {
-              JPName: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNName: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              Nicknames: {
-                $in: [oldRegex, regex]
-              }
+
+      filter.$and.push({
+        $or: [
+          {
+            JPName: {
+              $in: [oRegex, regex]
             }
-          ]
-        })
-        .exec();
-      if (!!lookup) {
-        entities = entities.concat(lookup);
-      }
+          },
+          {
+            CNName: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            Nicknames: {
+              $in: [oRegex, regex]
+            }
+          }
+        ]
+      });
     }
-    return entities.map(entity =>
-      sanitizeEntity(entity, { model: strapi.models["wf-character"] })
-    );
-  },
-  attribute: async ctx => {
-    let entities = [];
-    if (ctx.query.name) {
-      const oldRegex = new RegExp(ctx.query.name, "i");
+    if (ctx.query.attribute) {
+      const oRegex = new RegExp(ctx.query.attribute, "i");
       const query = await strapi.services["word-alias"].normalize(
-        ctx.query.name
+        ctx.query.attribute
       );
       const regex = new RegExp(query, "i");
-      const lookup = await strapi
-        .query("wf-character")
-        .model.find({
-          $or: [
-            {
-              JPAttribute: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNAttribute: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENAttribute: {
-                $in: [oldRegex, regex]
-              }
+      filter.$and.push({
+        $or: [
+          {
+            JPAttribute: {
+              $in: [oRegex, regex]
             }
-          ]
-        })
-        .exec();
-      if (!!lookup) {
-        entities = entities.concat(lookup);
-      }
+          },
+          {
+            CNAttribute: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            ENAttribute: {
+              $in: [oRegex, regex]
+            }
+          }
+        ]
+      });
     }
-    return entities.map(entity =>
-      sanitizeEntity(entity, { model: strapi.models["wf-character"] })
-    );
-  },
-  abilities: async ctx => {
-    let entities = [];
-    if (ctx.query.name) {
-      const oldRegex = new RegExp(ctx.query.name, "i");
+    if (ctx.query.ability) {
+      const oRegex = new RegExp(ctx.query.ability, "i");
       const query = await strapi.services["word-alias"].normalize(
-        ctx.query.name
+        ctx.query.ability
       );
       const regex = new RegExp(query, "i");
-      const lookup = await strapi
-        .query("wf-character")
-        .model.find({
-          $or: [
-            {
-              JPSkillDesc: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENSkillDesc: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNSkillDesc: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              JPAbility1: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNAbility1: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENAbility1: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              JPAbility2: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNAbility2: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENAbility2: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              JPAbility3: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNAbility3: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENAbility3: {
-                $in: [oldRegex, regex]
-              }
+      filter.$and.push({
+        $or: [
+          {
+            JPSkillDesc: {
+              $in: [oRegex, regex]
             }
-          ]
-        })
-        .exec();
-      if (!!lookup) {
-        entities = entities.concat(lookup);
-      }
+          },
+          {
+            ENSkillDesc: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            CNSkillDesc: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            JPAbility1: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            CNAbility1: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            ENAbility1: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            JPAbility2: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            CNAbility2: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            ENAbility2: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            JPAbility3: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            CNAbility3: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            ENAbility3: {
+              $in: [oRegex, regex]
+            }
+          }
+        ]
+      });
     }
+    const lookup = await strapi
+      .query("wf-character")
+      .model.find(filter)
+      .exec();
+    if (!!lookup) entities = entities.concat(lookup);
     return entities.map(entity =>
       sanitizeEntity(entity, { model: strapi.models["wf-character"] })
     );

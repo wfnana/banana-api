@@ -26,22 +26,6 @@
     },
     {
       "method": "POST",
-      "path": "/wf-characters/attribute",
-      "handler": "wf-character.attribute",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/wf-characters/abilities",
-      "handler": "wf-character.abilities",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
       "path": "/wf-characters/scrape",
       "handler": "wf-character.scrape",
       "config": {

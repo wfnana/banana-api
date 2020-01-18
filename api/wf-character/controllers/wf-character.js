@@ -20,19 +20,17 @@ module.exports = {
           $or: [
             {
               JPName: {
-                $regex: query,
-                $options: "i"
+                $in: [ctx.query.name, regex]
               }
             },
             {
               CNName: {
-                $regex: query,
-                $options: "i"
+                $in: [ctx.query.name, regex]
               }
             },
             {
               Nicknames: {
-                $in: [regex]
+                $in: [ctx.query.name, regex]
               }
             }
           ]
@@ -61,20 +59,17 @@ module.exports = {
           $or: [
             {
               JPAttribute: {
-                $regex: query,
-                $options: "i"
+                $in: [ctx.query.name, regex]
               }
             },
             {
               CNAttribute: {
-                $regex: query,
-                $options: "i"
+                $in: [ctx.query.name, regex]
               }
             },
             {
               ENAttribute: {
-                $regex: query,
-                $options: "i"
+                $in: [ctx.query.name, regex]
               }
             }
           ]

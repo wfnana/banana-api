@@ -14,7 +14,7 @@
     "CNMaxCNSkill": "自身發動技能時、火屬性角色技能傷害 + 20 ％[最大 + 100 ％]/15 次彈射時、自身技能槽 + 10 ％、最多 10 次",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "火崩壞域初回SS獎勵，火崩壞域掉落",
+    "CNGet": "火崩壞域初回SS獎勵，火崩壞域掉落",
     "Nicknames": ["火崩壞武"]
   },
   {
@@ -32,7 +32,7 @@
     "CNMaxCNSkill": "自身於強化效果中、水屬性角色攻擊力 + 40 ％/戰鬥開始時、30秒內水屬性角色攻擊力 + 25 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "水崩壞域初回SS獎勵，水崩壞域掉落",
+    "CNGet": "水崩壞域初回SS獎勵，水崩壞域掉落",
     "Nicknames": ["水崩壞武"]
   },
   {
@@ -50,7 +50,7 @@
     "CNMaxCNSkill": "自身為雷屬性時、自身對BREAK．DOWN中的敵人造成傷害 + 30 ％/自身對麻痺效果中敵人造成傷害 + 25 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "雷崩壞域初回SS獎勵，雷崩壞域掉落",
+    "CNGet": "雷崩壞域初回SS獎勵，雷崩壞域掉落",
     "Nicknames": ["雷崩壞武"]
   },
   {
@@ -68,7 +68,7 @@
     "CNMaxCNSkill": "自身直接攻擊 15 次時、風屬性角色攻擊力 + 5 ％[最大 + 50 ％]/30 COMBO時、自身技能槽 + 10 ％、最多 10 次",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "風崩壞域初回SS獎勵，風崩壞域掉落",
+    "CNGet": "風崩壞域初回SS獎勵，風崩壞域掉落",
     "Nicknames": ["風崩壞武"]
   },
   {
@@ -86,7 +86,7 @@
     "CNMaxCNSkill": "自身HP回復時、光屬性角色攻擊力 + 5 ％[最大 + 50 ％]/自身HP低於 70 ％時、回復自身最大HP 20 ％、最多 1 次",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "光崩壞域初回SS獎勵，光崩壞域掉落",
+    "CNGet": "光崩壞域初回SS獎勵，光崩壞域掉落",
     "Nicknames": ["光崩壞武"]
   },
   {
@@ -104,7 +104,7 @@
     "CNMaxCNSkill": "自身為暗屬性時、自身被賦予的強化效果時間 + 30 ％/自身於強化效果中、自身攻擊力 + 40 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "暗崩壞域初回SS獎勵，暗崩壞域掉落",
+    "CNGet": "暗崩壞域初回SS獎勵，暗崩壞域掉落",
     "Nicknames": ["暗崩壞武"]
   },
   {
@@ -122,7 +122,7 @@
     "CNMaxCNSkill": "FEVER時、30秒內水屬性角色攻擊 + 60 ％ ＆ 回復自身最大HP 15 ％、最多 3 次",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "2019聖誕限定關卡掉落/限定商店兌換",
+    "CNGet": "2019聖誕限定關卡掉落/限定商店兌換",
     "Nicknames": ["聖誕武"]
   },
   {
@@ -140,7 +140,7 @@
     "CNMaxCNSkill": "雷屬性角色發動技能時、自身攻擊力 + 8 ％[最大 + 80 ％]/戰鬥開始時、自身技能槽 + 20 ％ ＆ 無力無效",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "降臨討伐 黑雷的廢龍 關卡掉落/商店兌換",
+    "CNGet": "降臨討伐 黑雷的廢龍 關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -158,7 +158,7 @@
     "CNMaxCNSkill": "雷屬性角色發動技能時、自身攻擊力 + 12 ％[最大 + 120 ％]/戰鬥開始時、自身技能槽 + 30 ％ ＆ 無力無效",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "降臨討伐 黑雷的廢龍 關卡掉落/商店兌換",
+    "CNGet": "降臨討伐 黑雷的廢龍 關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -176,7 +176,7 @@
     "CNMaxCNSkill": "自身發動技能時、風屬性角色技能槽 + 12 ％、最多 3 次",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "貓頭鷹討伐關卡掉落/商店兌換",
+    "CNGet": "貓頭鷹討伐關卡掉落/商店兌換",
     "Nicknames": ["貓頭鷹武"]
   },
   {
@@ -194,7 +194,7 @@
     "CNMaxCNSkill": "隊伍全體於浮游效果中時、風屬性角色攻擊力 + 40 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "不死王討伐關卡掉落/商店兌換",
+    "CNGet": "不死王討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -212,7 +212,7 @@
     "CNMaxCNSkill": "隊伍全體於浮游效果中時、風屬性角色攻擊力 + 60 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "不死王討伐關卡掉落/商店兌換",
+    "CNGet": "不死王討伐關卡掉落/商店兌換",
     "Nicknames": ["不死武"]
   },
   {
@@ -230,7 +230,7 @@
     "CNMaxCNSkill": "自身風屬性耐性 + 10 ％/5 次強化彈射時、強化彈射傷害 + 8 ％[最大 80 ％]",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "石像討伐關卡掉落/商店兌換",
+    "CNGet": "石像討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -248,7 +248,7 @@
     "CNMaxCNSkill": "自身風屬性耐性 + 15 ％/5 次強化彈射時、強化彈射傷害 + 10 ％[最大 100 ％]",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "石像討伐關卡掉落/商店兌換",
+    "CNGet": "石像討伐關卡掉落/商店兌換",
     "Nicknames": ["石像武"]
   },
   {
@@ -266,7 +266,7 @@
     "CNMaxCNSkill": "自身HP 60 ％以上時、水屬性角色攻擊力 + 35 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "海產討伐關卡掉落/商店兌換",
+    "CNGet": "海產討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -284,7 +284,7 @@
     "CNMaxCNSkill": "自身HP 60 ％以上時、水屬性角色攻擊力 + 50 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "海產討伐關卡掉落/商店兌換",
+    "CNGet": "海產討伐關卡掉落/商店兌換",
     "Nicknames": ["海產武"]
   },
   {
@@ -302,7 +302,7 @@
     "CNMaxCNSkill": "自身為暗屬性時、自身攻擊力 + 20 ％/自身HP 60 ％以下時、自身攻擊力 + 50 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "惡魔討伐關卡掉落/商店兌換",
+    "CNGet": "惡魔討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -320,7 +320,7 @@
     "CNMaxCNSkill": "自身為暗屬性時、自身攻擊力 + 30 ％/自身HP 60 ％以下時、自身攻擊力 + 70 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "惡魔討伐關卡掉落/商店兌換",
+    "CNGet": "惡魔討伐關卡掉落/商店兌換",
     "Nicknames": ["惡魔武"]
   },
   {
@@ -338,7 +338,7 @@
     "CNMaxCNSkill": "雷屬性角色發動技能時、自身技能傷害 + 25 ％[最大 + 125 ％]",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "白虎討伐關卡掉落/商店兌換",
+    "CNGet": "白虎討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -356,7 +356,7 @@
     "CNMaxCNSkill": "雷屬性角色發動技能時、自身技能傷害 + 40 ％[最大 + 200 ％]",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "白虎討伐關卡掉落/商店兌換",
+    "CNGet": "白虎討伐關卡掉落/商店兌換",
     "Nicknames": ["白虎斧"]
   },
   {
@@ -374,7 +374,7 @@
     "CNMaxCNSkill": "FEVER時、光屬性角色攻擊力 + 70 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "機械討伐關卡掉落/商店兌換",
+    "CNGet": "機械討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -392,7 +392,7 @@
     "CNMaxCNSkill": "FEVER時、光屬性角色攻擊力 + 100 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "機械討伐關卡掉落/商店兌換",
+    "CNGet": "機械討伐關卡掉落/商店兌換",
     "Nicknames": ["機械武"]
   },
   {
@@ -410,7 +410,7 @@
     "CNMaxCNSkill": "隊伍全體於貫通效果中時、隊伍全體攻擊力 + 35 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "大蛇討伐關卡掉落/商店兌換",
+    "CNGet": "大蛇討伐關卡掉落/商店兌換",
     "Nicknames": []
   },
   {
@@ -428,7 +428,7 @@
     "CNMaxCNSkill": "隊伍全體於貫通效果中時、隊伍全體攻擊力 + 50 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "大蛇討伐關卡掉落/商店兌換",
+    "CNGet": "大蛇討伐關卡掉落/商店兌換",
     "Nicknames": ["大蛇武"]
   },
   {
@@ -445,7 +445,7 @@
     "CNMaxCNSkill": "自身攻擊力 + 140 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "絆之證交換所",
+    "CNGet": "絆之證交換所",
     "Nicknames": ["神劍"]
   },
   {
@@ -462,7 +462,7 @@
     "CNMaxCNSkill": "隊伍全體於貫通效果中時、自身攻擊力 + 280 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "絆之證交換所",
+    "CNGet": "絆之證交換所",
     "Nicknames": ["神槍"]
   },
   {
@@ -479,7 +479,7 @@
     "CNMaxCNSkill": "隊伍全體HP + 10 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "劇情通關獲得",
+    "CNGet": "劇情通關獲得",
     "Nicknames": []
   },
   {
@@ -496,7 +496,7 @@
     "CNMaxCNSkill": "隊伍全體攻擊力 + 15 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "劇情通關獲得",
+    "CNGet": "劇情通關獲得",
     "Nicknames": []
   },
   {
@@ -513,7 +513,7 @@
     "CNMaxCNSkill": "協力球HP + 10 ％ ＆ 攻擊力 + 10 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "劇情通關獲得",
+    "CNGet": "劇情通關獲得",
     "Nicknames": []
   },
   {
@@ -530,7 +530,7 @@
     "CNMaxCNSkill": "隊伍成員有 3 種以上的種族時、隊伍全體攻擊力 + 30 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "劇情通關獲得",
+    "CNGet": "劇情通關獲得",
     "Nicknames": []
   },
   {
@@ -547,7 +547,7 @@
     "CNMaxCNSkill": "FEVER MODE時間 + 5 ％/FEVER中、隊伍全體攻擊力 + 25 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "劇情通關獲得",
+    "CNGet": "劇情通關獲得",
     "Nicknames": []
   },
   {
@@ -564,7 +564,7 @@
     "CNMaxCNSkill": "隊伍全體對弱化效果中敵人造成傷害 + 10 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "劇情通關獲得",
+    "CNGet": "劇情通關獲得",
     "Nicknames": []
   },
   {
@@ -581,7 +581,7 @@
     "CNMaxCNSkill": "自身攻擊力 + 10 ％ ＆ 全屬性耐性 - 50 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "擊破訓練場木樁(木)",
+    "CNGet": "擊破訓練場木樁(木)",
     "Nicknames": []
   },
   {
@@ -598,7 +598,7 @@
     "CNMaxCNSkill": "戰鬥開始時、1秒內自身攻擊力 + 30 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "擊破訓練場木樁(火)",
+    "CNGet": "擊破訓練場木樁(火)",
     "Nicknames": []
   },
   {
@@ -615,7 +615,7 @@
     "CNMaxCNSkill": "DASH時、自身攻擊力 + 0.30 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "擊破訓練場木樁(水)",
+    "CNGet": "擊破訓練場木樁(水)",
     "Nicknames": []
   },
   {
@@ -632,7 +632,7 @@
     "CNMaxCNSkill": "自身於弱化狀態中、自身攻擊力 + 10 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "擊破訓練場木樁(暗)",
+    "CNGet": "擊破訓練場木樁(暗)",
     "Nicknames": []
   },
   {
@@ -649,7 +649,7 @@
     "CNMaxCNSkill": "自身全屬性耐性 + 20 ％/自身受到傷害時、自身全屬性耐性 - 2 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "擊破訓練場木樁(雷)",
+    "CNGet": "擊破訓練場木樁(雷)",
     "Nicknames": []
   },
   {
@@ -667,7 +667,7 @@
     "CNMaxCNSkill": "自身為光屬性時、自身攻擊力 + 55 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -685,7 +685,7 @@
     "CNMaxCNSkill": "自身HP + 35 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -703,7 +703,7 @@
     "CNMaxCNSkill": "自身為雷屬性時、自身技能傷害 + 110 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -721,7 +721,7 @@
     "CNMaxCNSkill": "自身為風屬性時、自身所受回復量 + 50 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -739,7 +739,7 @@
     "CNMaxCNSkill": "強化彈射傷害 + 55 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -757,7 +757,7 @@
     "CNMaxCNSkill": "自身光屬性耐性 + 30 ％",
     "ImgUrl": "",
     "Rarity": "5",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -775,7 +775,7 @@
     "CNMaxCNSkill": "自身為火屬性時、自身攻擊力 + 40 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -793,7 +793,7 @@
     "CNMaxCNSkill": "自身火屬性耐性 + 20 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -811,7 +811,7 @@
     "CNMaxCNSkill": "自身為雷屬性時、自身使敵人DOWN的容易度 + 750 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -829,7 +829,7 @@
     "CNMaxCNSkill": "隊伍全體的貫通效果時間 + 20 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -847,7 +847,7 @@
     "CNMaxCNSkill": "自身技能傷害 + 60 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -865,7 +865,7 @@
     "CNMaxCNSkill": "戰鬥開始時、自身攻擊力 + 10 ％ ＆ 技能槽 + 80 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -883,7 +883,7 @@
     "CNMaxCNSkill": "協力球攻擊力 + 100 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -901,7 +901,7 @@
     "CNMaxCNSkill": "暗屬性角色棺桶COUNT - 5",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -919,7 +919,7 @@
     "CNMaxCNSkill": "隊伍全體浮游效果時間 + 20 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -937,7 +937,7 @@
     "CNMaxCNSkill": "自身為風屬性時、自身攻擊力 + 40 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -955,7 +955,7 @@
     "CNMaxCNSkill": "強化彈射傷害 + 30 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -973,7 +973,7 @@
     "CNMaxCNSkill": "自身攻擊力 + 50 ％ ＆ 全屬性耐性 - 10 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -991,7 +991,7 @@
     "CNMaxCNSkill": "自身攻擊力 + 30 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1009,7 +1009,7 @@
     "CNMaxCNSkill": "光屬性角色攻擊力 + 15 ％",
     "ImgUrl": "",
     "Rarity": "4",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1027,7 +1027,7 @@
     "CNMaxCNSkill": "暗屬性角色技能傷害 + 20 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1045,7 +1045,7 @@
     "CNMaxCNSkill": "水屬性角色強化效果時間 + 7 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1063,7 +1063,7 @@
     "CNMaxCNSkill": "風屬性角色HP + 6.50 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1081,7 +1081,7 @@
     "CNMaxCNSkill": "水屬性角色HP + 6.50 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1099,7 +1099,7 @@
     "CNMaxCNSkill": "戰鬥開始時、自身技能槽 + 80 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1117,7 +1117,7 @@
     "CNMaxCNSkill": "雷屬性角色攻擊力 + 10 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1135,7 +1135,7 @@
     "CNMaxCNSkill": "火屬性角色攻擊力 + 10 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1153,7 +1153,7 @@
     "CNMaxCNSkill": "自身攻擊力 + 10 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1171,7 +1171,7 @@
     "CNMaxCNSkill": "自身技能傷害 + 40 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1189,7 +1189,7 @@
     "CNMaxCNSkill": "強化彈射傷害 + 20 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1207,7 +1207,7 @@
     "CNMaxCNSkill": "火屬性角色技能傷害 + 20 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1225,7 +1225,7 @@
     "CNMaxCNSkill": "FEVER MODE時間 + 12 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1242,7 +1242,7 @@
     "CNMaxCNSkill": "自身全屬性耐性 + 10 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1260,7 +1260,7 @@
     "CNMaxCNSkill": "暗屬性角色使敵人DOWN的容易度 + 200 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1278,7 +1278,7 @@
     "CNMaxCNSkill": "光屬性角色HP + 6 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1296,7 +1296,7 @@
     "CNMaxCNSkill": "戰鬥開始時、雷屬性角色技能槽 + 45 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1314,7 +1314,7 @@
     "CNMaxCNSkill": "自身HP + 13 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1332,7 +1332,7 @@
     "CNMaxCNSkill": "風屬性角色全屬性耐性 + 5 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1350,7 +1350,7 @@
     "CNMaxCNSkill": "光屬性角色所受回復量 + 9 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1368,7 +1368,7 @@
     "CNMaxCNSkill": "自身使敵人DOWN的容易度 + 400 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "裝備卡池",
+    "CNGet": "裝備卡池",
     "Nicknames": []
   },
   {
@@ -1386,7 +1386,7 @@
     "CNMaxCNSkill": "擊破敵方 5 次時、自身攻擊力 + 8 ％[最大 + 40 ％]",
     "ImgUrl": "",
     "Rarity": "2",
-    "GetFrom": "劇情關卡掉落 4-2-2 4-2-4 5-1-2 5-2-1 6-1-2",
+    "CNGet": "劇情關卡掉落 4-2-2 4-2-4 5-1-2 5-2-1 6-1-2",
     "Nicknames": []
   },
   {
@@ -1404,7 +1404,7 @@
     "CNMaxCNSkill": "DASH 5 次時、自身攻擊力 + 7 ％[最大 + 35 ％]",
     "ImgUrl": "",
     "Rarity": "2",
-    "GetFrom": "劇情關卡掉落 3-10-2 2EX-6-2 3-8-3 3EX-4-2 3EX-8-2",
+    "CNGet": "劇情關卡掉落 3-10-2 2EX-6-2 3-8-3 3EX-4-2 3EX-8-2",
     "Nicknames": []
   },
   {
@@ -1422,7 +1422,7 @@
     "CNMaxCNSkill": "40 COMBO時、自身技能槽 + 10 ％、最多10次",
     "ImgUrl": "",
     "Rarity": "2",
-    "GetFrom": "劇情關卡掉落 4-2-5 5-2-3 6-1-3 6-2-4 6-3-3",
+    "CNGet": "劇情關卡掉落 4-2-5 5-2-3 6-1-3 6-2-4 6-3-3",
     "Nicknames": []
   },
   {
@@ -1440,7 +1440,7 @@
     "CNMaxCNSkill": "15 COMBO時、自身技能傷害 + 12 ％[最大 + 60 ％]",
     "ImgUrl": "",
     "Rarity": "2",
-    "GetFrom": "劇情關卡掉落 2-9-5 3-11-2 3-13-2 2EX-9-3",
+    "CNGet": "劇情關卡掉落 2-9-5 3-11-2 3-13-2 2EX-9-3",
     "Nicknames": []
   },
   {
@@ -1458,7 +1458,7 @@
     "CNMaxCNSkill": "自身HP 80 ％以上時、自身攻擊力 + 50 ％",
     "ImgUrl": "",
     "Rarity": "2",
-    "GetFrom": "劇情關卡掉落 4-1-2 4-1-3 4EX-1-1 5-6-2 6-3-2",
+    "CNGet": "劇情關卡掉落 4-1-2 4-1-3 4EX-1-1 5-6-2 6-3-2",
     "Nicknames": []
   },
   {
@@ -1476,7 +1476,7 @@
     "CNMaxCNSkill": "3 次強力彈射時、強力彈射傷害 + 7 ％[最大 + 35 ％]",
     "ImgUrl": "",
     "Rarity": "2",
-    "GetFrom": "劇情關卡掉落 3-6-2 3-7-4 3EX-6-1 3EX-7-3",
+    "CNGet": "劇情關卡掉落 3-6-2 3-7-4 3EX-6-1 3EX-7-3",
     "Nicknames": []
   },
   {
@@ -1494,7 +1494,7 @@
     "CNMaxCNSkill": "自身於攻擊力提升狀態中、自身攻擊力 + 35 ％",
     "ImgUrl": "",
     "Rarity": "1",
-    "GetFrom": "劇情關卡掉落 1-1-2 1-2-1 1-2-2 2-3-2 2-4-1",
+    "CNGet": "劇情關卡掉落 1-1-2 1-2-1 1-2-2 2-3-2 2-4-1",
     "Nicknames": []
   },
   {
@@ -1512,7 +1512,7 @@
     "CNMaxCNSkill": "自身發動技能時、隊伍全體技能傷害 + 10 ％[最大 + 40 ％]",
     "ImgUrl": "",
     "Rarity": "1",
-    "GetFrom": "劇情關卡掉落",
+    "CNGet": "劇情關卡掉落",
     "Nicknames": []
   },
   {
@@ -1530,7 +1530,7 @@
     "CNMaxCNSkill": "自身受到傷害時、自身全屬性耐性 + 2 ％[最大 + 10 ％]",
     "ImgUrl": "",
     "Rarity": "1",
-    "GetFrom": "劇情關卡掉落 2-4-2 2-7-1 2-7-2 3-1-2 3-1-4",
+    "CNGet": "劇情關卡掉落 2-4-2 2-7-1 2-7-2 3-1-2 3-1-4",
     "Nicknames": []
   },
   {
@@ -1547,7 +1547,7 @@
     "CNMaxCNSkill": "自身毒效果無效 ＆ 麻痺效果無效",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "通關第一章EX所有關卡後贈送",
+    "CNGet": "通關第一章EX所有關卡後贈送",
     "Nicknames": []
   },
   {
@@ -1564,7 +1564,7 @@
     "CNMaxCNSkill": "自身攻擊力下降效果無效 ＆ 技能傷害下降效果無效",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "通關第三章EX所有關卡後贈送",
+    "CNGet": "通關第三章EX所有關卡後贈送",
     "Nicknames": []
   },
   {
@@ -1581,7 +1581,7 @@
     "CNMaxCNSkill": "自身獲得經驗值 + 50 ％/獲得瑪那 + 5 ％",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "通關第六章EX所有關卡後贈送",
+    "CNGet": "通關第六章EX所有關卡後贈送",
     "Nicknames": []
   },
   {
@@ -1598,7 +1598,7 @@
     "CNMaxCNSkill": "",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "",
+    "CNGet": "",
     "Nicknames": []
   },
   {
@@ -1615,7 +1615,7 @@
     "CNMaxCNSkill": "",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "",
+    "CNGet": "",
     "Nicknames": []
   },
   {
@@ -1632,7 +1632,7 @@
     "CNMaxCNSkill": "",
     "ImgUrl": "",
     "Rarity": "3",
-    "GetFrom": "",
+    "CNGet": "",
     "Nicknames": []
   }
 ]

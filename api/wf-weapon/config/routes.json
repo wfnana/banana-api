@@ -26,14 +26,6 @@
     },
     {
       "method": "POST",
-      "path": "/wf-weapons/attribute",
-      "handler": "wf-weapon.attribute",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
       "path": "/wf-weapons/initial",
       "handler": "wf-weapon.initial",
       "config": {

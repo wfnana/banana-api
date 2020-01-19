@@ -9,83 +9,94 @@ const { sanitizeEntity } = require("strapi-utils");
 module.exports = {
   lookup: async ctx => {
     let entities = [];
+    let filter = {
+      $and: []
+    };
     if (ctx.query.name) {
-      const oldRegex = new RegExp(ctx.query.name, "i");
+      const oRegex = new RegExp(ctx.query.name, "i");
       const query = await strapi.services["word-alias"].normalize(
         ctx.query.name
       );
       const regex = new RegExp(query, "i");
-      const lookup = await strapi
-        .query("wf-weapon")
-        .model.find({
-          $or: [
-            {
-              JPName: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNName: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENName: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              Nicknames: {
-                $in: [oldRegex, regex]
-              }
+
+      filter.$and.push({
+        $or: [
+          {
+            JPName: {
+              $in: [oRegex, regex]
             }
-          ]
-        })
-        .exec();
-      console.log(query, lookup);
-      if (!!lookup) {
-        entities = entities.concat(lookup);
-      }
+          },
+          {
+            CNName: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            ENName: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            Nicknames: {
+              $in: [oRegex, regex]
+            }
+          }
+        ]
+      });
     }
-    return entities.map(entity =>
-      sanitizeEntity(entity, { model: strapi.models["wf-weapon"] })
-    );
-  },
-  attribute: async ctx => {
-    let entities = [];
-    if (ctx.query.name) {
-      const oldRegex = new RegExp(ctx.query.name, "i");
+    if (ctx.query.attribute) {
+      const oRegex = new RegExp(ctx.query.attribute, "i");
       const query = await strapi.services["word-alias"].normalize(
-        ctx.query.name
+        ctx.query.attribute
       );
       const regex = new RegExp(query, "i");
-      const lookup = await strapi
-        .query("wf-weapon")
-        .model.find({
-          $or: [
-            {
-              JPAttribute: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              CNAttribute: {
-                $in: [oldRegex, regex]
-              }
-            },
-            {
-              ENAttribute: {
-                $in: [oldRegex, regex]
-              }
+      filter.$and.push({
+        $or: [
+          {
+            JPAttribute: {
+              $in: [oRegex, regex]
             }
-          ]
-        })
-        .exec();
-      console.log(query, lookup);
-      if (!!lookup) {
-        entities = entities.concat(lookup);
-      }
+          },
+          {
+            CNAttribute: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            ENAttribute: {
+              $in: [oRegex, regex]
+            }
+          }
+        ]
+      });
     }
+    if (ctx.query.ability) {
+      const oRegex = new RegExp(ctx.query.ability, "i");
+      const query = await strapi.services["word-alias"].normalize(
+        ctx.query.ability
+      );
+      const regex = new RegExp(query, "i");
+      filter.$and.push({
+        $or: [
+          {
+            CNSkill: {
+              $in: [oRegex, regex]
+            }
+          },
+          {
+            CNMaxSkill: {
+              $in: [oRegex, regex]
+            }
+          }
+        ]
+      });
+    }
+    if (filter.$and.length === 0) filter = {};
+    const lookup = await strapi
+      .query("wf-weapon")
+      .model.find(filter)
+      .exec();
+    if (!!lookup) entities = entities.concat(lookup);
     return entities.map(entity =>
       sanitizeEntity(entity, { model: strapi.models["wf-weapon"] })
     );

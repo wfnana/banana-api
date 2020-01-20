@@ -53,8 +53,8 @@ function line2parser(s, c) {
 
   // Body
   c.ProPic = images[0] && images[0].src;
-  c.JPName = Names[0];
-  c.CNName = Names[1];
+  c.JPName = String(Names[0]).replace(/\r?\n|\r/g, "");
+  c.CNName = String(Names[1]).replace(/\r?\n|\r/g, "");
   c.HP = columns[HPIndicator + 1].innerHTML;
   c.CNDesc = columns[HPIndicator + 2].innerHTML;
 }

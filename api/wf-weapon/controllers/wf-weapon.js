@@ -123,7 +123,7 @@ module.exports = {
         // find if wf weapon is exist
         const WFWeapon = await strapi.query("wf-weapon").model.findOne(query);
         if (WFWeapon) {
-          weapon.Nicknames = Array.from(weapon.Nicknames)
+          weapon.Nicknames = Array.from(weapon.Nicknames || [])
             .concat(WFWeapon.Nicknames)
             .filter(function(Nickname, index, self) {
               return self.indexOf(Nickname) == index;

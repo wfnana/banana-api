@@ -169,6 +169,11 @@ module.exports = {
           .query("wf-character")
           .model.findOne(query);
         if (WFCharacter) {
+          character.Nicknames = Array.from(character.Nicknames)
+            .concat(WFCharacter.Nicknames)
+            .filter(function(Nickname, index, self) {
+              return self.indexOf(Nickname) == index;
+            });
           strapi.query("wf-character").update(query, character);
         } else {
           // try to create wf character

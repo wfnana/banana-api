@@ -1286,7 +1286,7 @@
     "CNAttribute": "雷",
     "ENAttribute": "Lighting",
     "JPName": "ピレボス",
-    "CNName": "",
+    "CNName": "菲力帕斯",
     "ENName": "Philebus",
     "Hp": "235",
     "Atk": "60",
@@ -1297,7 +1297,7 @@
     "ImgUrl": "",
     "Rarity": "3",
     "CNGet": "裝備卡池",
-    "Nicknames": []
+    "Nicknames": ["小黃書"]
   },
   {
     "JPAttribute": "全",

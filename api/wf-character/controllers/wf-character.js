@@ -146,14 +146,18 @@ module.exports = {
       sanitizeEntity(entity, { model: strapi.models["wf-character"] })
     );
   },
-  scrape: async ctx => {
-    const entities = await strapi.services.scraper.fetch();
+  scrapeData: async ctx => {
+    const entities = await strapi.services.scraper.character();
     return entities.map(entity =>
       sanitizeEntity(entity, { model: strapi.models["wf-character"] })
     );
   },
+  scrapeImage: async ctx => {
+    const entities = await strapi.services.scraper.images();
+    return entities;
+  },
   initial: async ctx => {
-    const entities = await strapi.services.scraper.fetch();
+    const entities = await strapi.services.scraper.character();
     for (let i = entities.length - 1; i >= 0; i--) {
       try {
         const character = entities[i];

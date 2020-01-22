@@ -26,8 +26,16 @@
     },
     {
       "method": "POST",
-      "path": "/wf-characters/scrape",
-      "handler": "wf-character.scrape",
+      "path": "/wf-characters/scrape/data",
+      "handler": "wf-character.scrapeData",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wf-characters/scrape/image",
+      "handler": "wf-character.scrapeImage",
       "config": {
         "policies": []
       }

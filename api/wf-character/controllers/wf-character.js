@@ -156,11 +156,30 @@ module.exports = {
     const entities = await strapi.services.scraper.images();
     return entities;
   },
+  downloadImage: async ctx => {
+    const entities = await strapi.services.scraper.images();
+    entities.map(function(entity) {
+      const isXmas = String(entity.square).includes("_xm19");
+      const isNewYear = String(entity.square).includes("_ny20");
+
+      let middlePath = "";
+
+      if (isXmas) middlePath = "xmas";
+      if (isNewYear) middlePath = "newyear";
+
+      download(entity.square, `${middlePath}/${name}`, "square", "png");
+      download(entity.full_shot, `${middlePath}/${name}`, "full_shot", "png");
+      download(entity.front, `${middlePath}/${name}`, "front", "gif");
+      download(entity.special, `${middlePath}/${name}`, "special", "gif");
+    });
+    return entities;
+  },
   initial: async ctx => {
     const entities = await strapi.services.scraper.character();
+    const images = await strapi.services.scraper.images();
     for (let i = entities.length - 1; i >= 0; i--) {
       try {
-        const character = entities[i];
+        let character = entities[i];
         const query = {
           JPName: character.JPName,
           CNName: character.CNName,
@@ -168,6 +187,21 @@ module.exports = {
           Rarity: character.Rarity,
           CNGet: character.CNGet
         };
+        const imageIndex = Array.from(images).findIndex(function(image) {
+          return (
+            image.name === character.JPName &&
+            image.attribute === character.JPAttribute
+          );
+        });
+        if (imageIndex != -1) {
+          entities[i].ImgSquareURL = images[imageIndex].square;
+          entities[i].ImgFullShotURL = images[imageIndex].full_shot;
+          entities[i].ImgFrontURL = images[imageIndex].front;
+          entities[i].ImgSpecialURL = images[imageIndex].special;
+          character = entities[i];
+        } else {
+          console.log(character);
+        }
         // find if wf character is exist
         const WFCharacter = await strapi
           .query("wf-character")

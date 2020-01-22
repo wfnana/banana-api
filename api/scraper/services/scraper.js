@@ -156,36 +156,78 @@ function line10parser(s, c) {
 const JPAttributeList = ["火", "水", "雷", "風", "闇", "光"];
 const CNAttributeList = ["火", "水", "雷", "風", "暗", "光"];
 const ENAttributeList = ["FIRE", "WATER", "THUNDER", "WIND", "DARK", "LIGHT"];
+const ColorAttributeList = ["red", "blue", "yellow", "green", "black", "white"];
 
-async function download(url, middlePath, name, ext) {
-  const folder = path.join(
-    __dirname,
-    "..",
-    "..",
-    "..",
-    "public",
-    "download",
-    "wf-characters",
-    middlePath
-  );
-  if (!fs.existsSync(folder)) fs.mkdirSync(folder, { recursive: true });
-  const fullpath = path.join(folder, `${name}.${ext}`);
-  const writer = fs.createWriteStream(fullpath);
-  const res = await axios({
-    url: url,
-    method: "GET",
-    responseType: "stream"
+function imageparser(l) {
+  let data = [];
+  l.map(function(character) {
+    const squarePNG = character
+      .querySelector("figure.icon img")
+      .getAttribute("src");
+    const fullShotPNG = squarePNG.replace("square_0.png", "full_shot_0.png");
+    const info = character.querySelector("dl.info");
+    const frontGIF = info.querySelector("img").getAttribute("src");
+    const specialGIF = frontGIF.replace("front.gif", "special.gif");
+    const name = info.querySelector("dd").innerHTML;
+
+    const index = ColorAttributeList.indexOf(
+      character.className.trim().replace("class-", "")
+    );
+
+    data.push({
+      name: name,
+      attribute: JPAttributeList[index],
+      square: squarePNG,
+      full_shot: fullShotPNG,
+      front: frontGIF,
+      special: specialGIF
+    });
   });
+  return data;
+}
 
-  res.data.pipe(writer);
+async function scrapeImagePage(browser, page = 1) {
+  // Go to Search Path Page 1
+  await browser.goto(`https://worldflipper.jp/character/?p=${page}`);
 
-  return new Promise((resolve, reject) => {
-    writer.on("finish", resolve);
-    writer.on("error", reject);
-  });
+  // Retreive Page Content
+  const html = await browser.content();
+  const { window } = new JSDOM(html);
+  const document = window.document;
+
+  const list = Array.from(document.querySelectorAll("ul.char-list > li"));
+
+  return await imageparser(list);
 }
 
 module.exports = {
+  download: async function(url, middlePath, name, ext) {
+    const folder = path.join(
+      __dirname,
+      "..",
+      "..",
+      "..",
+      "public",
+      "download",
+      "wf-characters",
+      middlePath
+    );
+    if (!fs.existsSync(folder)) fs.mkdirSync(folder, { recursive: true });
+    const fullpath = path.join(folder, `${name}.${ext}`);
+    const writer = fs.createWriteStream(fullpath);
+    const res = await axios({
+      url: url,
+      method: "GET",
+      responseType: "stream"
+    });
+
+    res.data.pipe(writer);
+
+    return new Promise((resolve, reject) => {
+      writer.on("finish", resolve);
+      writer.on("error", reject);
+    });
+  },
   images: async function() {
     // Start Broswer
     const browser = await puppeteer.launch({
@@ -193,49 +235,14 @@ module.exports = {
     });
     // Create New Page
     const page = await browser.newPage();
-    // Go to Search Path
-    await page.goto("https://worldflipper.jp/character/?p=1");
 
-    // Retreive Page Content
-    const html = await page.content();
-    const { window } = new JSDOM(html);
-    const document = window.document;
+    const page1 = await scrapeImagePage(page, 1);
+    const page2 = await scrapeImagePage(page, 2);
+    const page3 = await scrapeImagePage(page, 3);
 
-    const list = Array.from(document.querySelectorAll("ul.char-list > li"));
-
-    let data = [];
-    list.map(function(character) {
-      const squarePNG = character
-        .querySelector("figure.icon img")
-        .getAttribute("src");
-      const fullShotPNG = squarePNG.replace("square_0.png", "full_shot_0.png");
-      const info = character.querySelector("dl.info");
-      const frontGIF = info.querySelector("img").getAttribute("src");
-      const specialGIF = frontGIF.replace("front.gif", "special.gif");
-      const name = info.querySelector("dd").innerHTML;
-
-      const isXmas = String(squarePNG).includes("_xm19");
-      const isNewYear = String(squarePNG).includes("_ny20");
-
-      let middlePath = "";
-
-      if (isXmas) middlePath = "xmas";
-      if (isNewYear) middlePath = "newyear";
-
-      download(squarePNG, `${middlePath}/${name}`, "square", "png");
-      download(fullShotPNG, `${middlePath}/${name}`, "full_shot", "png");
-      download(frontGIF, `${middlePath}/${name}`, "front", "gif");
-      download(specialGIF, `${middlePath}/${name}`, "special", "gif");
-      data.push({
-        name: name,
-        square: squarePNG,
-        full_shot: fullShotPNG,
-        front: frontGIF,
-        special: specialGIF
-      });
-    });
-
-    return data;
+    return Array.from(page1)
+      .concat(page2)
+      .concat(page3);
   },
   character: async function() {
     // Start Browser

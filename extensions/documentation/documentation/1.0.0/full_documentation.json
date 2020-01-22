@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/22/2020 7:04:11 PM"
+    "x-generation-date": "01/22/2020 8:17:44 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4946,6 +4946,18 @@
           },
           "Limited": {
             "type": "string"
+          },
+          "ImgSquareURL": {
+            "type": "string"
+          },
+          "ImgFullShotURL": {
+            "type": "string"
+          },
+          "ImgFrontURL": {
+            "type": "string"
+          },
+          "ImgSpecialURL": {
+            "type": "string"
           }
         }
       },
@@ -5063,6 +5075,18 @@
             "type": "string"
           },
           "Limited": {
+            "type": "string"
+          },
+          "ImgSquareURL": {
+            "type": "string"
+          },
+          "ImgFullShotURL": {
+            "type": "string"
+          },
+          "ImgFrontURL": {
+            "type": "string"
+          },
+          "ImgSpecialURL": {
             "type": "string"
           }
         }
@@ -5183,6 +5207,18 @@
           },
           "JPNickname": {
             "type": "string"
+          },
+          "ImgSquareURL": {
+            "type": "string"
+          },
+          "ImgFullShotURL": {
+            "type": "string"
+          },
+          "ImgFrontURL": {
+            "type": "string"
+          },
+          "ImgSpecialURL": {
+            "type": "string"
           }
         }
       },
@@ -5295,6 +5331,18 @@
             "type": "object"
           },
           "JPNickname": {
+            "type": "string"
+          },
+          "ImgSquareURL": {
+            "type": "string"
+          },
+          "ImgFullShotURL": {
+            "type": "string"
+          },
+          "ImgFrontURL": {
+            "type": "string"
+          },
+          "ImgSpecialURL": {
             "type": "string"
           }
         }

@@ -119,6 +119,18 @@
     },
     "JPNickname": {
       "type": "string"
+    },
+    "ImgSquareURL": {
+      "type": "string"
+    },
+    "ImgFullShotURL": {
+      "type": "string"
+    },
+    "ImgFrontURL": {
+      "type": "string"
+    },
+    "ImgSpecialURL": {
+      "type": "string"
     }
   }
 }
